@@ -6,6 +6,9 @@ import (
 )
 
 func Encode(s string, base int) (string, error) {
+	if base < 2 || base > 62 {
+		return "", fmt.Errorf("invalid base %d: must be between 2 and 62", base)
+	}
 	var b big.Int
 	if _, ok := b.SetString(s, base); !ok {
 		return "", fmt.Errorf("invalid base%d string", base)
@@ -14,6 +17,9 @@ func Encode(s string, base int) (string, error) {
 }
 
 func Decode(s string, base int) (string, error) {
+	if base < 2 || base > 62 {
+		return "", fmt.Errorf("invalid base %d: must be between 2 and 62", base)
+	}
 	var b big.Int
 	if _, ok := b.SetString(s, 62); !ok {
 		return "", fmt.Errorf("invalid base62 string: %s", s)
