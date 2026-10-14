@@ -1,7 +1,7 @@
 # go-base62
 
 [![tag](https://img.shields.io/github/tag/cyg-pd/go-base62.svg)](https://github.com/cyg-pd/go-base62/releases)
-![Go Version](https://img.shields.io/badge/Go-%3E%3D%201.18-%23007d9c)
+![Go Version](https://img.shields.io/badge/Go-%3E%3D%201.22-%23007d9c)
 [![GoDoc](https://godoc.org/github.com/cyg-pd/go-base62?status.svg)](https://pkg.go.dev/github.com/cyg-pd/go-base62)
 ![Build Status](https://github.com/cyg-pd/go-base62/actions/workflows/test.yml/badge.svg)
 [![Go report](https://goreportcard.com/badge/github.com/cyg-pd/go-base62)](https://goreportcard.com/report/github.com/cyg-pd/go-base62)
